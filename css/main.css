@@ -1,4 +1,4 @@
-
+/* Specification */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -15,7 +15,7 @@ div, p, form, input, a, span, button {
     outline: none;
 }
 
-p, h3 {
+p, h1, h2, h3 {
 	margin: 0;   
 }
 
@@ -34,6 +34,8 @@ a {
 	transition: all 0.5s ease;
 }
 
+/* Slider */
+
 .container {
     padding: 369px 193px ;
 }
@@ -42,10 +44,6 @@ a {
     display: flex;
 }
 
-.slider__wrap {
-    display: flex;
-    margin: 0 51px;
-}
 
 .slider__btn {
     border: none;
@@ -53,9 +51,13 @@ a {
     cursor: pointer;
 }
 
+.slider__btn_prev {
+    margin-right: 51px;
+}
 
 .slider__btn_next {
     transform: rotate(-180deg);
+    margin-left: 51px;
 }
 
 .slider__block {
@@ -67,7 +69,7 @@ a {
     max-width: 295px;
 }
 
-.slider .slider__block:last-child {
+.slider .slider__block:nth-child(5){
     margin-right: 0;
 }
 
@@ -102,3 +104,43 @@ a {
     font-weight: 600;
 }
 
+/* Modal */
+
+.modal__wrap {
+    /* position: fixed; */
+    padding: 74px 85px 0;
+}
+
+.modal__btn_close {
+    position: absolute;
+    top:29px ;
+    right: 38px;
+}
+
+.modal__title {
+    color: #CB1E3A;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.modal__headline {
+    max-width: 320px;
+    color: #687491;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.modal__subtitle {
+    margin-bottom: 15px;
+    margin-top: 47px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #687491;
+}
+
+.modal__text {
+    max-width: 770px;
+}
