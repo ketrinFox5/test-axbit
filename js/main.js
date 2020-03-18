@@ -39,7 +39,6 @@ $(document).ready(function(){
     /* Click on the background, but not on the window */
 
     $('.modal').on('click', function(e) {
-        e.preventDefault();
         if ($(e.target).closest('.modal__wrap').length == 0) {
             $(this).fadeOut();		
             $('body').css({ "overflow" : "visible"});			
