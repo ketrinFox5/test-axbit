@@ -42,6 +42,7 @@ a {
 
 .slider {
     display: flex;
+    align-items: center;
 }
 
 
@@ -49,6 +50,8 @@ a {
     border: none;
     background: transparent;
     cursor: pointer;
+    width: 32px;
+    height: 32px;
 }
 
 .slider__btn_prev {
@@ -69,9 +72,9 @@ a {
     max-width: 295px;
 }
 
-.slider .slider__block:nth-child(5){
+/* .slider .slider__block:nth-child(5){
     margin-right: 0;
-}
+} */
 
 
 .slider__headline {
@@ -104,6 +107,17 @@ a {
     font-weight: 600;
 }
 
+.slider__link:hover {
+    color: #0F2250;
+}
+
+/* .slick-prev, .slick-next {
+    background: transparent;
+    border: none;
+    background-image: url(../img/btn.png) no-repeat center/ cover;
+} */
+
+
 /* Modal */
 
 .color_grey {
@@ -115,12 +129,15 @@ a {
 }
 
 .modal__wrap {
-    position: relative;
-    padding: 74px 85px 0;
+    position: fixed;
+    padding: 74px 85px 198px;
     background: #FFFFFF;
     border-radius: 4px;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1590px;
+    opacity: 0;
 }
 
 .modal__btn_close {
@@ -165,6 +182,10 @@ a {
     border-radius: 4px;
     padding: 54px 89px 63px;
     max-width: 464px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .modal__form__title {
@@ -181,7 +202,7 @@ a {
 .modal__input {
     width: 286px;
     margin-bottom: 11px;
-    padding: 5px 0 5px 10px;
+    padding: 5px 5px 5px 10px;
     color: #60687E;
     font-size: 16px;
     line-height: 24px;
@@ -197,7 +218,8 @@ a {
 
 .modal__input_file {
     opacity: 0;
-    
+    width: 0;
+    height: 0;
     position: absolute;
 }
 
@@ -212,6 +234,10 @@ label {
     margin-left: 10px;
 }
 
+label:hover {
+    color: #CB1E3A;
+}
+
 .modal__file {
     display: flex;
     align-items: center;
@@ -224,7 +250,7 @@ label {
     line-height: 16px;
     background: #CB1E3A;
     border-radius: 4px;
-    padding: 14px 17px;
+    padding: 12px 37px;
     display: flex;
     align-items: center;
     justify-content: center;
