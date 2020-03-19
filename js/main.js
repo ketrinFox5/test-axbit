@@ -36,21 +36,8 @@ $(document).ready(function(){
                   slidesToScroll: 1,
                   centerMode: true,
                   centerPadding : '1%'
-                  // mobileFirst: true
                 }
               }
-              // {
-              //   breakpoint: 390,
-              //   settings: {
-              //     slidesToShow: 1,
-              //     infinite: true,
-              //     slidesToScroll: 1,
-              //     centerMode: true,
-              //     centerPadding : '0.5%'
-              //     // mobileFirst: true
-              //     // variableWidth: true
-              //   }
-              // }
           ],
           
         slidesToShow: 4,
